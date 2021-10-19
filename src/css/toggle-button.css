@@ -1,0 +1,23 @@
+
+.doge-toggle-button {
+  position: relative;
+}
+
+.doge-toggle-button::before {
+  content: '';
+  width: 30%;
+  height: 0.1em;
+  position: absolute;
+  bottom: 0.1em;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2em;
+}
+
+.doge-toggle-button.toggle-on::before {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.doge-toggle-button.toggle-off::before {
+  background-color: rgba(255, 255, 255, 0.4);
+}
